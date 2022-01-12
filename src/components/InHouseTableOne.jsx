@@ -68,6 +68,7 @@ const InHouseTableOne = () => {
 			],
 		},
 	];
+
 	return (
 		<div className="inHouse_table">
 			<div className="page_container">
@@ -161,9 +162,9 @@ const InHouseTableOne = () => {
 								</p>
 							</div>
 
-							<div className="col-11 col-md-10 mx-auto bankHost_img">
+							{/* <div className="col-11 col-md-10 mx-auto bankHost_img">
 								<img className="w-100" src={i3} alt="" />
-							</div>
+							</div> */}
 							<div className="col-11 col-md-10 mx-auto bankHost_img">
 								<img className="w-100" src={i4} alt="" />
 							</div>
