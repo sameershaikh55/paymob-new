@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from "react";
-import { IoIosArrowForward } from "react-icons/io";
+import triangle from "../assets/triangle.svg";
+import rightArrow from "../assets/rightArrow.svg";
+import wRightArrow from "../assets/wRightArrow.svg";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaTimes } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 
 // IMPORTS
-import logo from "../assets/logo.png";
+import logo from "../assets/logo.svg";
 
 const ProductList = () => {
 	return (
@@ -18,14 +20,14 @@ const ProductList = () => {
 						<div className="col-6">
 							<NavLink exact to="/productOverview">
 								<button className="color1 border-0 shadow-none bg-transparent f14">
-									Overview <IoIosArrowForward />
+									Overview <img className="arrow" src={rightArrow} alt="" />
 								</button>
 							</NavLink>
 						</div>
 						<div className="col-6">
 							<NavLink exact to="/contact">
 								<button className="color1 border-0 shadow-none bg-transparent f14">
-									Contact <IoIosArrowForward />
+									Contact <img className="arrow" src={rightArrow} alt="" />
 								</button>
 							</NavLink>
 						</div>
@@ -36,91 +38,97 @@ const ProductList = () => {
 			<div className="inner_dropdown container-fluid pt-5 pb-4">
 				<div className="row">
 					<div className="col-6">
-						<h6 className="bottomHead mb-3 f14">PAYMENT TOOLS</h6>
+						<h6 className="mb-3 fw-light f14">PAYMENT TOOLS</h6>
 						<ul className="list-unstyled mb-0">
 							<li className="f14 mb-3">
 								<NavLink
 									to="/androidSdk"
-									className="color1 text-decoration-none color1 fw600"
+									className="text-white text-decoration-none fw-bold"
 								>
-									Android mobile SDK <IoIosArrowForward />
+									Android mobile SDK{" "}
+									<img className="arrow" src={wRightArrow} alt="" />
 								</NavLink>
 							</li>
 							<li className="f14 mb-3">
 								<NavLink
 									to="/softPos"
-									className="color1 text-decoration-none color1 fw600"
+									className="text-white text-decoration-none fw-bold"
 								>
-									SoftPOS app <IoIosArrowForward />
+									SoftPOS app <img className="arrow" src={wRightArrow} alt="" />
 								</NavLink>
 							</li>
-							<li className="f14 mb-3">
+							{/* <li className="f14 mb-3">
 								<NavLink
 									to="/mposCard"
-									className="color1 text-decoration-none color1 fw600"
+									className="text-white text-decoration-none fw-bold"
 								>
-									mPOS card reader <IoIosArrowForward />
+									mPOS card reader <img className="arrow" src={wRightArrow} alt="" />
 								</NavLink>
 							</li>
 							<li className="f14 mb-3">
 								<NavLink
 									to="/miniPos"
-									className="color1 text-decoration-none color1 fw600"
+									className="text-white text-decoration-none fw-bold"
 								>
-									Mini POS terminal <IoIosArrowForward />
+									Mini POS terminal <img className="arrow" src={wRightArrow} alt="" />
 								</NavLink>
 							</li>
 							<li className="f14 mb-3">
 								<NavLink
 									to="/smartPos"
-									className="color1 text-decoration-none color1 fw600"
+									className="text-white text-decoration-none fw-bold"
 								>
-									Smart POS terminal <IoIosArrowForward />
+									Smart POS terminal <img className="arrow" src={wRightArrow} alt="" />
 								</NavLink>
-							</li>
+							</li> */}
 						</ul>
 					</div>
 					<div className="col-6">
-						<h6 className="bottomHead mb-3 f14">SYSTEM COMPONENETS</h6>
+						<h6 className="mb-3 fw-light f14">SYSTEM COMPONENETS</h6>
 						<ul className="list-unstyled mb-0">
 							<li className="f14 mb-3">
 								<NavLink
 									to="/merchantOnboarding"
-									className="color1 text-decoration-none color1 fw600"
+									className="text-white text-decoration-none fw-bold"
 								>
-									Digital merchant onboarding <IoIosArrowForward />
+									Digital merchant onboarding{" "}
+									<img className="arrow" src={wRightArrow} alt="" />
 								</NavLink>
 							</li>
-							<li className="f14 mb-3 color1 fw600">
+							<li className="f14 mb-3 color1 bold">
 								<NavLink
 									to="/adminPortal"
-									className="color1 text-decoration-none color1 fw600"
+									className="text-white text-decoration-none fw-bold"
 								>
-									Admin portal <IoIosArrowForward />
+									Admin portal{" "}
+									<img className="arrow" src={wRightArrow} alt="" />
 								</NavLink>
 							</li>
-							<li className="f14 mb-3 color1 fw600">
+							<li className="f14 mb-3 color1 bold">
 								<NavLink
 									to="/merchantDashboard"
-									className="color1 text-decoration-none color1 fw600"
+									className="text-white text-decoration-none fw-bold"
 								>
-									Merchant dashboard <IoIosArrowForward />
+									Merchant dashboard{" "}
+									<img className="arrow" src={wRightArrow} alt="" />
 								</NavLink>
 							</li>
-							<li className="f14 mb-3 color1 fw600">
+							<li className="f14 mb-3 color1 bold">
 								<NavLink
 									to="/paymentGatway"
-									className="color1 text-decoration-none color1 fw600"
+									className="text-white text-decoration-none fw-bold"
 								>
-									Payment gateway <IoIosArrowForward />
+									Payment gateway{" "}
+									<img className="arrow" src={wRightArrow} alt="" />
 								</NavLink>
 							</li>
-							<li className="f14 mb-3 color1 fw600">
+							<li className="f14 mb-3 color1 bold">
 								<NavLink
 									to="/certifications"
-									className="color1 text-decoration-none color1 fw600"
+									className="text-white text-decoration-none fw-bold"
 								>
-									Certifications <IoIosArrowForward />
+									Certifications{" "}
+									<img className="arrow" src={wRightArrow} alt="" />
 								</NavLink>
 							</li>
 						</ul>
@@ -129,9 +137,9 @@ const ProductList = () => {
 			</div>
 
 			{/* ARROW START */}
-			{/* <div className="tria_icon">
+			<div className="tria_icon">
 				<img src={triangle} alt="" />
-			</div> */}
+			</div>
 			{/* ARROW END */}
 		</div>
 	);
@@ -151,25 +159,28 @@ const UseCases = () => {
 							<li className="f14 mb-3">
 								<NavLink
 									to="/industrySector"
-									className="color1 text-decoration-none color1 fw600"
+									className="text-white text-decoration-none fw-bold"
 								>
-									Industry Sectors <IoIosArrowForward />
+									Industry Sectors{" "}
+									<img className="arrow" src={wRightArrow} alt="" />
 								</NavLink>
 							</li>
 							<li className="f14 mb-3">
 								<NavLink
 									to="/partners"
-									className="color1 text-decoration-none color1 fw600"
+									className="text-white text-decoration-none fw-bold"
 								>
-									Friends of Paymob <IoIosArrowForward />
+									Friends of Dapio{" "}
+									<img className="arrow" src={wRightArrow} alt="" />
 								</NavLink>
 							</li>
 							<li className="f14 mb-3">
 								<NavLink
 									to="/caseStudies"
-									className="color1 text-decoration-none color1 fw600"
+									className="text-white text-decoration-none fw-bold"
 								>
-									Case Studies <IoIosArrowForward />
+									Case Studies{" "}
+									<img className="arrow" src={wRightArrow} alt="" />
 								</NavLink>
 							</li>
 						</ul>
@@ -178,9 +189,9 @@ const UseCases = () => {
 			</div>
 
 			{/* ARROW START */}
-			{/* <div className="tria_icon">
+			<div className="tria_icon">
 				<img src={triangle} alt="" />
-			</div> */}
+			</div>
 			{/* ARROW END */}
 		</div>
 	);
@@ -200,34 +211,38 @@ const Developers = () => {
 							<li className="f14 mb-3">
 								<NavLink
 									to="/developers"
-									className="color1 text-decoration-none color1 fw600"
+									className="text-white text-decoration-none fw-bold"
 								>
-									Developer tools <IoIosArrowForward />
+									Developer tools{" "}
+									<img className="arrow" src={wRightArrow} alt="" />
 								</NavLink>
 							</li>
 							<li className="f14 mb-3">
 								<NavLink
 									to="/callback"
-									className="color1 text-decoration-none color1 fw600"
+									className="text-white text-decoration-none fw-bold"
 								>
-									App to app API <IoIosArrowForward />
+									App to app API{" "}
+									<img className="arrow" src={wRightArrow} alt="" />
 								</NavLink>
 							</li>
 							<li className="f14 mb-3">
 								<NavLink
 									to="/inHouseDeployement"
-									className="color1 text-decoration-none color1 fw600"
+									className="text-white text-decoration-none fw-bold"
 								>
-									In-house deployment <IoIosArrowForward />
+									In-house deployment{" "}
+									<img className="arrow" src={wRightArrow} alt="" />
 								</NavLink>
 							</li>
 							<li className="f14 mb-3">
 								<a
-									className="color1 text-decoration-none color1 fw600"
+									className="text-white text-decoration-none fw-bold"
 									target="blank"
 									href="https://airtable.com/shrL21Fd1xLND39mK"
 								>
-									Create a demo account <IoIosArrowForward />
+									Create a demo account{" "}
+									<img className="arrow" src={wRightArrow} alt="" />
 								</a>
 							</li>
 						</ul>
@@ -236,9 +251,9 @@ const Developers = () => {
 			</div>
 
 			{/* ARROW START */}
-			{/* <div className="tria_icon">
+			<div className="tria_icon">
 				<img src={triangle} alt="" />
-			</div> */}
+			</div>
 			{/* ARROW END */}
 		</div>
 	);
@@ -258,9 +273,9 @@ const About = () => {
 							<li className="f14 mb-3">
 								<NavLink
 									to="/about"
-									className="color1 text-decoration-none color1 fw600"
+									className="text-white text-decoration-none fw-bold"
 								>
-									About us <IoIosArrowForward />
+									About us <img className="arrow" src={wRightArrow} alt="" />
 								</NavLink>
 							</li>
 							<li className="f14 mb-3">
@@ -270,25 +285,26 @@ const About = () => {
 									smooth={true}
 									duration={600}
 									spy={true}
-									className="color1 text-decoration-none color1 fw600 pointer"
+									className="text-white text-decoration-none fw-bold pointer"
 								>
-									Paymob INsights <IoIosArrowForward />
+									Dapio INsights{" "}
+									<img className="arrow" src={wRightArrow} alt="" />
 								</NavLink>
 							</li>
 							<li className="f14 mb-3">
 								<NavLink
 									to="/faq"
-									className="color1 text-decoration-none color1 fw600"
+									className="text-white text-decoration-none fw-bold"
 								>
-									FAQs <IoIosArrowForward />
+									FAQs <img className="arrow" src={wRightArrow} alt="" />
 								</NavLink>
 							</li>
 							<li className="f14 mb-3">
 								<NavLink
 									to="/press"
-									className="color1 text-decoration-none color1 fw600"
+									className="text-white text-decoration-none fw-bold"
 								>
-									Press <IoIosArrowForward />
+									Press <img className="arrow" src={wRightArrow} alt="" />
 								</NavLink>
 							</li>
 						</ul>
@@ -298,33 +314,34 @@ const About = () => {
 							<li className="f14 mb-3">
 								<NavLink
 									to="/team"
-									className="color1 text-decoration-none color1 fw600"
+									className="text-white text-decoration-none fw-bold"
 								>
-									Our team <IoIosArrowForward />
+									Our team <img className="arrow" src={wRightArrow} alt="" />
 								</NavLink>
 							</li>
 							<li className="f14 mb-3">
 								<NavLink
 									to="/careers"
-									className="color1 text-decoration-none color1 fw600"
+									className="text-white text-decoration-none fw-bold"
 								>
-									Careers <IoIosArrowForward />
+									Careers <img className="arrow" src={wRightArrow} alt="" />
 								</NavLink>
 							</li>
 							<li className="f14 mb-3">
 								<NavLink
 									to="/certifications"
-									className="color1 text-decoration-none color1 fw600"
+									className="text-white text-decoration-none fw-bold"
 								>
-									Certifications and security <IoIosArrowForward />
+									Certifications and security{" "}
+									<img className="arrow" src={wRightArrow} alt="" />
 								</NavLink>
 							</li>
 							<li className="f14 mb-3">
 								<NavLink
 									to="/contact"
-									className="color1 text-decoration-none color1 fw600"
+									className="text-white text-decoration-none fw-bold"
 								>
-									Contact us <IoIosArrowForward />
+									Contact us <img className="arrow" src={wRightArrow} alt="" />
 								</NavLink>
 							</li>
 						</ul>
@@ -333,9 +350,9 @@ const About = () => {
 			</div>
 
 			{/* ARROW START */}
-			{/* <div className="tria_icon">
+			<div className="tria_icon">
 				<img src={triangle} alt="" />
-			</div> */}
+			</div>
 			{/* ARROW END */}
 		</div>
 	);
@@ -355,9 +372,10 @@ const Pricing = () => {
 							<li className="f14 mb-3">
 								<NavLink
 									to="/pricing"
-									className="color1 text-decoration-none color1 fw600"
+									className="text-white text-decoration-none fw-bold"
 								>
-									Basic fee setup <IoIosArrowForward />
+									Basic fee setup{" "}
+									<img className="arrow" src={wRightArrow} alt="" />
 								</NavLink>
 							</li>
 						</ul>
@@ -366,9 +384,9 @@ const Pricing = () => {
 			</div>
 
 			{/* ARROW START */}
-			{/* <div className="tria_icon">
+			<div className="tria_icon">
 				<img src={triangle} alt="" />
-			</div> */}
+			</div>
 			{/* ARROW END */}
 		</div>
 	);
@@ -450,7 +468,13 @@ const Header = ({ ClickEvent, isOpen }) => {
 		});
 	};
 	return (
-		<div className="header_container">
+		<div
+			style={{
+				background: (!isOpen && "#fff") || "#f1efec",
+				boxShadow: isOpen && "none",
+			}}
+			className="header_container"
+		>
 			<div className="header_containerSize w-100">
 				<div className="container-fluid ps-4 ps-md-2 pe-0 h-100 w-100">
 					<div className="row h-100 w-100">
@@ -471,7 +495,7 @@ const Header = ({ ClickEvent, isOpen }) => {
 								<div className="d-none d-lg-block">
 									<ul className="d-flex list-unstyled mb-0">
 										<li className="nav_one position-relative">
-											<span onClick={first} className="blackC pointer">
+											<span onClick={first} className="blackC pointer fw600">
 												Products
 											</span>
 											{/* {nestedNav.first && <ProductList />} */}
@@ -480,7 +504,7 @@ const Header = ({ ClickEvent, isOpen }) => {
 											</div>
 										</li>
 										<li className="nav_two ms-5 position-relative">
-											<span onClick={second} className="blackC pointer">
+											<span onClick={second} className="blackC pointer fw600">
 												Use cases
 											</span>
 											{/* {nestedNav.second && <UseCases />} */}
@@ -489,7 +513,7 @@ const Header = ({ ClickEvent, isOpen }) => {
 											</div>
 										</li>
 										<li className="nav_three ms-5 position-relative">
-											<span onClick={third} className="blackC pointer">
+											<span onClick={third} className="blackC pointer fw600">
 												Developers
 											</span>
 											{/* {nestedNav.third && <Developers />} */}
@@ -498,7 +522,7 @@ const Header = ({ ClickEvent, isOpen }) => {
 											</div>
 										</li>
 										<li className="nav_four ms-5 position-relative">
-											<span onClick={fourth} className="blackC pointer">
+											<span onClick={fourth} className="blackC pointer fw600">
 												Pricing
 											</span>
 											{/* {nestedNav.fourth && <Pricing />} */}
@@ -507,7 +531,7 @@ const Header = ({ ClickEvent, isOpen }) => {
 											</div>
 										</li>
 										<li className="nav_five ms-5 position-relative">
-											<span onClick={fifth} className="blackC pointer">
+											<span onClick={fifth} className="blackC pointer fw600">
 												About us
 											</span>
 											{/* {nestedNav.fifth && <About />} */}
@@ -519,8 +543,8 @@ const Header = ({ ClickEvent, isOpen }) => {
 								</div>
 								<div className="d-none d-lg-block">
 									<NavLink to="/contact">
-										<button className="color1 border-0 bg-white py-2 px-4 fw800">
-											Contact us
+										<button className="color1 border-0 bg-white py-2 px-4 fw-bold">
+											Request Demo
 										</button>
 									</NavLink>
 								</div>

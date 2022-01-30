@@ -73,9 +73,9 @@ function App() {
 					<Route exact path="/productOverview" component={ProductOverview} />
 					<Route exact path="/androidSdk" component={AndroidSdk} />
 					<Route exact path="/softPos" component={SoftPos} />
-					<Route exact path="/mposCard" component={MposCard} />
-					<Route exact path="/miniPos" component={MiniPos} />
-					<Route exact path="/smartPos" component={SmartPos} />
+					{/* <Route exact path="/mposCard" component={MposCard} /> */}
+					{/* <Route exact path="/miniPos" component={MiniPos} /> */}
+					{/* <Route exact path="/smartPos" component={SmartPos} /> */}
 					<Route
 						exact
 						path="/merchantOnboarding"

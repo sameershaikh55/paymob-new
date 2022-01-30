@@ -12,9 +12,9 @@ const HeroSoft = () => {
 								<div className="col-12 col-md-6">
 									<h1 className="fw-bolder">SoftPOS white label app</h1>
 									<p className="orangeC gotham f18 mb-0 fw-bold mt-3">
-										Paymob SoftPOS
+										Dapio SoftPOS
 									</p>
-									<p className="mt-3 fw-bold">
+									<p className="text-dark mt-3 fw-bold">
 										We provide our white label partners with the ability to
 										re-brand our Tap-On-Phone app. Leveraging the solution as
 										part of your own offering, reflective of your own unique

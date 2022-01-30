@@ -56,17 +56,22 @@ const PreBuiltDash = ({ adminP }) => {
 											</p>
 											<div className="row">
 												<div className="col-12">
-													<h1 className="col-12 col-md-11 color1 f34 gotham fw700">
+													<h1 className="col-12 col-md-11 color1 f34 gotham fw700 lh71">
 														Merchant tools under one digital roof
 													</h1>
 												</div>
 											</div>
 											<div className="row">
-												<p className="lh27 color1 f18 crice fw600">
+												<p className="lh27 color1 f18 crice fw600 mt-2">
 													Provide an overview of transaction history, product
 													sales, data reports and beyond to your merchant
 													customers as part of our Tap to Phone while label app,
 													and SDK app integration.
+												</p>
+												<p className="lh27 color1 f18 crice fw600 mt-5">
+													Build your own merchant dashboard with our addional
+													developer friendly API functionality for an entirely
+													bespoke end-to-end solution.
 												</p>
 											</div>
 											<NavLink to="/contact">

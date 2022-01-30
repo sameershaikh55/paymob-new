@@ -22,11 +22,11 @@ const Benefits = () => {
 
 	const hr = {
 		height: "3px",
-		background: "rgba(0, 0, 0, 0.4)",
+		background: "rgba(255, 255, 255, 0.5)",
 	};
 
 	return (
-		<div className="benefits_container pt-5">
+		<div className="benefits_container">
 			<div className="page_container">
 				<div className="container-fluid">
 					<div className="row">
@@ -34,8 +34,7 @@ const Benefits = () => {
 							<div className="row gx-5">
 								<div className="col-12 col-md-6">
 									<div className="ps-5">
-										<hr style={hr} />
-										<h4 className="f18 color1 gotham my-4 fw-bold">
+										<h4 className="f18 text-white gotham my-4 fw-bold">
 											Client benefits
 										</h4>
 									</div>
@@ -46,7 +45,7 @@ const Benefits = () => {
 												return (
 													<li
 														key={i}
-														className="mb-2 color2 gotham f16 mb-5 d-flex"
+														className="mb-2 text-white gotham f16 mb-5 d-flex"
 													>
 														<div>
 															<img className="me-2" src={check} alt="" />
@@ -59,9 +58,9 @@ const Benefits = () => {
 									</div>
 								</div>
 								<div className="col-12 col-md-6">
+									<hr style={hr} className="mb-5 d-block d-md-none" />
 									<div className="ps-5">
-										<hr style={hr} />
-										<h4 className="f18 color1 gotham my-4 fw-bold">
+										<h4 className="f18 text-white gotham my-4 fw-bold">
 											Merchant benefits
 										</h4>
 									</div>
@@ -72,7 +71,7 @@ const Benefits = () => {
 												return (
 													<li
 														key={i}
-														className="mb-2 color2 gotham f16 mb-5 d-flex"
+														className="mb-2 text-white gotham f16 mb-5 d-flex"
 													>
 														<div>
 															<img className="me-2" src={check} alt="" />

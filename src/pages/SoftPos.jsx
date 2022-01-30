@@ -27,9 +27,9 @@ const SoftPos = () => {
 			<SoftDetails />
 			<HiwSoft />
 			<BespokeSolutions />
-			<SystemComponent />
+			<SystemComponent softPos />
 			<Benefits />
-			<CaseStudies />
+			<CaseStudies softPos />
 		</Layout>
 	);
 };

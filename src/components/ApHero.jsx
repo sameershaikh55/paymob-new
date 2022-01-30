@@ -10,8 +10,10 @@ const ApHero = () => {
 						<div className="col-11 col-lg-12 mx-auto">
 							<div className="row align-items-center">
 								<div className="col-12 col-md-6 col-lg-5">
-									<h1 className="fw-bolder">Admin portal</h1>
-									<p className="mt-3 mt-md-4 fw-bold">
+									<h1 className="text-center text-md-start fw-bolder">
+										Admin portal
+									</h1>
+									<p className="text-center text-md-start text-dark mt-3 mt-md-4 fw-bold">
 										The all-in-one admin portal for SoftPOS white label clients.
 										Keep a finger on the pulse of your application, track
 										customer sales, usage and generate reports based your

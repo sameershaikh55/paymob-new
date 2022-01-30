@@ -4,7 +4,7 @@ import React from "react";
 import Layout from "../layout";
 import CallBackHome from "../components/CallBackHome";
 import CallbackApp from "../components/CallbackApp";
-import HowitWorks from "../components/HowitWorks";
+import HowitWorks2 from "../components/HowitWorks2";
 
 // IMPORT SEO
 import Seo from "../components/Seo";
@@ -20,8 +20,8 @@ const Callback = () => {
 
 			<CallBackHome />
 			<CallbackApp />
-			<div className="howItWorks_container">
-				<HowitWorks callback />
+			<div className="howItWorks_container howItWorks_container2">
+				<HowitWorks2 callback />
 			</div>
 		</Layout>
 	);

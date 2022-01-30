@@ -10,17 +10,17 @@ const PressHero = () => {
 				<div className="container-fluid">
 					<div className="row">
 						<div className="col-11 col-lg-12 mx-auto text-center">
-							<h1 className="gotham fw-bold f64">Press</h1>
-							<p className="my-4 color2 crice f16 lh27 letterSpace fw600">
+							<h1 className="gotham fw-bold text-white f64">Press</h1>
+							<p className="my-4 text-white crice f16 lh27 letterSpace fw600">
 								For media enquiries, please contact pr@paymobtech.com
 							</p>
 							<a href={Press} download>
-								<button className="themeBtn color1 bg-white fw-bold gotham py-2 px-3 border-0 f18">
+								<button className="themeBtn border border-2 border-white text-white bg-transparent fw-bold gotham py-2 px-3 f18">
 									Download our press kit
 								</button>
 							</a>
 							<div>
-								<p className="color2 fw600 mt-4 crice lh27 letterSpace">
+								<p className="text-white fw600 mt-4 crice lh27 letterSpace">
 									Follow Paymob
 								</p>
 								<div>

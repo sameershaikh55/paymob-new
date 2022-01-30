@@ -90,7 +90,7 @@ const OurPaymentInfra = ({ md, adminP, pg }) => {
 						<div className="col-11 col-lg-12 mx-auto">
 							<div className="row align-items-center">
 								<div className="col-12 col-md-6 col-lg-5">
-									<h1 className="color7 gotham fw600">
+									<h1 className="text-white gotham fw600">
 										Our payment <br /> infrastructure.
 									</h1>
 								</div>
@@ -100,7 +100,7 @@ const OurPaymentInfra = ({ md, adminP, pg }) => {
 											return (
 												<div key={i} className="col-6 mt-4">
 													<div className="cards_inner ps-2">
-														<h5 className="gotham f20 color1 fw700 color7">
+														<h5 className="gotham f20 text-white fw700 color7">
 															{prev.t}
 														</h5>
 														<Link to={prev.l}>

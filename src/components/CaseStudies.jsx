@@ -2,9 +2,12 @@ import React from "react";
 import check from "../assets/check.svg";
 import caseStudy from "../assets/softpos/caseStudy.svg";
 
-const CaseStudies = () => {
+const CaseStudies = ({ softPos }) => {
 	return (
-		<div className="System_component_container caseStudies pb-5">
+		<div
+			style={{ background: (softPos && "#F1EFEC") || "#fff" }}
+			className="System_component_container caseStudies pt-5 pb-5 mt-0"
+		>
 			<div className="page_container">
 				<div className="container-fluid">
 					<div className="row">
@@ -15,7 +18,7 @@ const CaseStudies = () => {
 										Case studies
 									</p>
 									<h1 className="color1 gotham fw700">
-										ZmBIZI uses Paymob to power their Tap to Phone app
+										ZmBIZI uses Dapio to power their Tap to Phone app
 									</h1>
 									<p className="underHead color1 f18 crice fw600 my-4">
 										Client ZmBIZI, a smartphone technology provider integrated

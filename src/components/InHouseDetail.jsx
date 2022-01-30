@@ -1,5 +1,5 @@
 import React from "react";
-import i2 from "../assets/InHouse/i2.png";
+import i2 from "../assets/InHouse/i2.svg";
 
 const InHouseDetail = () => {
 	return (
@@ -10,7 +10,7 @@ const InHouseDetail = () => {
 						<div className="col-11 col-md-12 mx-auto">
 							<div className="row align-items-center">
 								<div className="col-12 col-md-6">
-									<h4 className="gotham color1 f22 lh-base fw-bold">
+									<h4 className="gotham text-white f22 lh-base fw-bold">
 										For the Paymob system to work, it is necessary to ensure the
 										work on the servers of the following software:
 									</h4>

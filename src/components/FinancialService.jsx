@@ -28,7 +28,7 @@ const FinancialService = () => {
 								<div className="row">
 									<div className="col-md-8 col-lg-5">
 										<p className="headText mt-3 f18 crice fw-bold">
-											Join our likeminded pay-tech community utalising Paymob’s
+											Join our likeminded pay-tech community utalising Dapio's
 											payment gateway, bespoke SoftPOS app, seamless SDK
 											integration and API architecture.
 										</p>
@@ -37,7 +37,9 @@ const FinancialService = () => {
 							</div>
 
 							<div className="bottomSec">
-								<p className="orangeC f18 text-end">Who we work with</p>
+								<p className="gotham orangeC f18 text-center text-md-end">
+									Who we work with
+								</p>
 
 								<div className="fincialBrandCont d-flex justify-content-center justify-content-md-between flex-wrap">
 									<span className="d-none d-md-block">

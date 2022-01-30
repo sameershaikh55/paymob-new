@@ -83,7 +83,7 @@ const SdkBrands = () => {
 	];
 
 	return (
-		<div className="sdk_brand_container mt-5 mt-md-0">
+		<div className="sdk_brand_container">
 			<div className="header_containerSize">
 				<div className="container-fluid">
 					<div className="row">

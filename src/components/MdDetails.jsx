@@ -9,7 +9,7 @@ const MdDetails = () => {
 					saction overview
 				</h5>
 			),
-			d: "An adaptable solution designed to fit your own branding style for both back end portals to customer facing interfaces. Powered by paymob, looks like you!",
+			d: "An adaptable solution designed to fit your own branding style for both back end portals to customer facing interfaces. Powered by Dapio, looks like you!",
 		},
 		{
 			t: (

@@ -17,7 +17,7 @@ const GatewayDetails = () => {
 	};
 
 	return (
-		<div className="sdk_detail_container gateway mt-5 mt-md-0">
+		<div className="sdk_detail_container gateway">
 			<div className="header_containerSize">
 				<div className="container-fluid">
 					<div className="row">
@@ -38,7 +38,7 @@ const GatewayDetails = () => {
 											return (
 												<li
 													key={i}
-													className="col-6 mb-2 color2 gotham f16 mb-5 d-flex"
+													className="col-12 col-md-6 mb-2 color2 gotham f16 mb-5 d-flex"
 												>
 													<div>
 														<img className="me-2" src={check} alt="" />

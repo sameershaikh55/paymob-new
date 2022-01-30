@@ -1,6 +1,6 @@
 import React from "react";
 import p1 from "../assets/products/p1.svg";
-import p2 from "../assets/products/p2.svg";
+import p2 from "../assets/products/p2.png";
 import { IoIosArrowForward } from "react-icons/io";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
@@ -37,7 +37,7 @@ const Products = () => {
 						<div className="col-11 col-lg-12 mx-auto">
 							<div className="text-end">
 								<div className="row">
-									<div className="ms-auto col-12 col-md-10 col-lg-8">
+									<div className="ms-auto col-12 col-md-10 col-lg-7">
 										<p className="f18 orangeC mb-0">Products</p>
 										<h1 className="fw700">
 											An adaptable integrated framework tailored to your

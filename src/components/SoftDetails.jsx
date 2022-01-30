@@ -8,7 +8,7 @@ const SoftDetails = () => {
 					<span className="bottomLineGrayLight pb-2">Bespoke </span>technology
 				</h5>
 			),
-			d: "An adaptable solution designed to fit your own branding style for both back end portals to customer facing interfaces. Powered by paymob, looks like you!",
+			d: "An adaptable solution designed to fit your own branding style for both back end portals to customer facing interfaces. Powered by Dapio, looks like you!",
 		},
 		{
 			t: (
@@ -17,7 +17,7 @@ const SoftDetails = () => {
 					nd portable
 				</h5>
 			),
-			d: "Our SDK can fit into your existing app behind your own branding, or as an external redirect to our Paymob SoftPOS app.",
+			d: "Our SDK can fit into your existing app behind your own branding, or as an external redirect to our Dapio SoftPOS app.",
 		},
 		{
 			t: (
@@ -39,7 +39,7 @@ const SoftDetails = () => {
 	];
 
 	return (
-		<div className="sdk_detail_container softDetails mt-5">
+		<div className="sdk_detail_container softDetails">
 			<div className="header_containerSize">
 				<div className="container-fluid">
 					<div className="row">

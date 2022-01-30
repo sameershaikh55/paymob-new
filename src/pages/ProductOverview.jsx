@@ -2,8 +2,6 @@ import React from "react";
 
 // IMPORTS
 import contentIcon from "../assets/productOverview/contentIcon.svg";
-import softPos from "../assets/productOverview/softPos.svg";
-import video from "../assets/gifs/Promo video for product page.mp4";
 
 // IMPORTING COMPONENTS
 import Layout from "../layout";
@@ -67,33 +65,18 @@ const ProductOverview = () => {
 			<ExploreAvail />
 
 			{/* PAGE TEXT END */}
-			<div className="softPos_container py-5 py-md-4 mb-0 mb-md-5">
+			<div className="softPos_container">
 				<div className="page_container">
 					<div className="container-fluid">
 						<div className="row">
-							<div className="col-11 col-md-10 mx-auto">
-								<h1 className="text-center fw-bold color1 gotham">
-									Paymob SoftPOS demo
-								</h1>
-								<div>
-									<video
-										className="w-100"
-										poster={softPos}
-										autoPlay
-										loop
-										muted
-										src={video}
-									/>
-								</div>
-								<div className="d-flex justify-content-center mt-4">
-									<a
-										target="blank"
-										href="https://airtable.com/shrL21Fd1xLND39mK"
-									>
-										<button className="gotham color1 border-0 bg-white py-2 fw500 f18 px-4">
-											Request demo <IoIosArrowForward />
-										</button>
-									</a>
+							<div className="col-10 col-md-3 mx-auto mx-md-0 ms-md-auto">
+								<div className="d-flex flex-column justify-content-center justify-content-md-end align-items-center align-items-md-end">
+									<h1 className="text-center text-md-end gotham fw-bold">
+										Dapio <br /> SoftPOS demo
+									</h1>
+									<button className="gotham px-4 mt-md-4">
+										Request demo <IoIosArrowForward />
+									</button>
 								</div>
 							</div>
 						</div>

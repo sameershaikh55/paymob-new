@@ -7,15 +7,14 @@ import t2 from "../assets/ourTeam/t2.png";
 import t3 from "../assets/ourTeam/t3.png";
 import t4 from "../assets/ourTeam/t4.png";
 import t5 from "../assets/ourTeam/t5.png";
-import t6 from "../assets/ourTeam/t6.png";
 import t7 from "../assets/ourTeam/t7.png";
-import t8 from "../assets/ourTeam/t8.png";
 import t9 from "../assets/ourTeam/t9.png";
 import t10 from "../assets/ourTeam/t10.png";
 import t11 from "../assets/ourTeam/t11.png";
 import t12 from "../assets/ourTeam/t12.png";
 import t13 from "../assets/ourTeam/t13.png";
-import t14 from "../assets/ourTeam/t14.png";
+import t15 from "../assets/ourTeam/t15.png";
+import t16 from "../assets/ourTeam/t16.png";
 import { NavLink } from "react-router-dom";
 
 const TeamBody = () => {
@@ -36,19 +35,39 @@ const TeamBody = () => {
 			d: "IR Manager",
 		},
 		{
-			i: t4,
-			t: "Kate L",
-			d: "Project Manager",
-		},
-		{
 			i: t5,
 			t: "Charlotte P",
 			d: "Social Media & Community Manager",
 		},
 		{
+			i: t15,
+			t: "Andrew",
+			d: "Lead Front End Developer",
+		},
+		{
+			i: t4,
+			t: "Kate L",
+			d: "Project Manager",
+		},
+		{
 			i: t11,
 			t: "June R",
 			d: "Business Development Executive",
+		},
+		{
+			i: t10,
+			t: "Bulat M",
+			d: "Graphic Designer",
+		},
+		{
+			i: t16,
+			t: "Anton S",
+			d: "Back End Developer",
+		},
+		{
+			i: t13,
+			t: "Dmitry P",
+			d: "Lead Generation Executive",
 		},
 		{
 			i: t7,
@@ -59,26 +78,6 @@ const TeamBody = () => {
 			i: t12,
 			t: "Kate I",
 			d: "Communications Associate",
-		},
-		{
-			i: t10,
-			t: "Bulat M",
-			d: "Graphic Designer",
-		},
-		{
-			i: t13,
-			t: "Dmitry P",
-			d: "Lead Generation Executive",
-		},
-		{
-			i: t14,
-			t: "Alexey L",
-			d: "Finance Executive",
-		},
-		{
-			i: t6,
-			t: "Vladimir L",
-			d: "Lead Developer",
 		},
 		{
 			i: t9,

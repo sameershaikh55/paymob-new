@@ -35,7 +35,7 @@ const PaymentGatway = () => {
 			<GatewayDetails />
 
 			{/* BUSINESS FEATURE START */}
-			<div className="">
+			<div className="business_feature">
 				<div className="header_containerSize">
 					<div className="container-fluid">
 						<div className="row">

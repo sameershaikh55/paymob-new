@@ -10,8 +10,8 @@ const PriceHero = () => {
 						<div className="col-11 col-lg-12 mx-auto">
 							<div className="row align-items-center">
 								<div className="col-12 col-md-8 col-lg-6">
-									<h1 className="fw-bolder">Basic fee setup</h1>
-									<p className="mt-3 mt-md-4 fw-bold">
+									<h1 className="fw-bolder text-white">Basic fee setup</h1>
+									<p className="mt-3 mt-md-4 fw-bold text-white">
 										Paymob fees are individually tailored to each client, we
 										offer 4 types of accounts, from flat rate to bespoke. If you
 										are interested in joining forces with us to launch your own
@@ -21,7 +21,7 @@ const PriceHero = () => {
 										target="blank"
 										href="https://airtable.com/shrL21Fd1xLND39mK"
 									>
-										<button className="py-2 px-3 border-0 f18 mt-2 mt-md-3">
+										<button className="py-2 px-3 border border-2 border-white bg-transparent text-white f18 mt-2 mt-md-3">
 											Request demo <IoIosArrowForward />
 										</button>
 									</a>

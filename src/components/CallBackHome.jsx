@@ -7,8 +7,8 @@ const CallBackHome = () => {
 				<div className="container-fluid">
 					<div className="row">
 						<div className="col-11 col-lg-12 mx-auto text-center">
-							<h1 className="color1 f64 gotham fw600 mb-4">App to app APIs</h1>
-							<p className="col-12 col-md-10 col-lg-6 mx-auto color2 letterSpace f16 crice lh27 fw600">
+							<h1 className="text-white f64 gotham fw600 mb-4">App to app APIs</h1>
+							<p className="col-12 col-md-10 col-lg-6 mx-auto text-white letterSpace f16 crice lh27 fw600">
 								Avoid the hastle of building your own payment infrastructure by
 								leveraging our developer friendly, ready to go APIs for
 								immediate app to app callback.

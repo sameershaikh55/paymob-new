@@ -72,7 +72,13 @@ const FAQBody = () => {
 										return (
 											<Accordion key={ind}>
 												<AccordionSummary
-													expandIcon={true ? <Add /> : <RemoveIcon />}
+													expandIcon={
+														true ? (
+															<Add color="#fff" />
+														) : (
+															<RemoveIcon color="#fff" />
+														)
+													}
 													aria-controls="panel1a-content"
 													id="panel1a-header"
 												>

@@ -6,20 +6,20 @@ const AboutDetail = () => {
 			<div className="page_container">
 				<div className="container-fluid">
 					<div className="row">
-						<div className="col-11 col-lg-8 mx-auto ms-md-auto">
-							<div className="d-flex">
-								<h5 className="color1 f18 gotham fw-bold">
-									<span className="bottomLineGray">Our hist</span>ory
+						<div className="col-11 col-lg-8 mx-auto mx-md-0 ms-md-auto">
+							<div className="d-flex flex-column">
+								<h5 className="text-white f22 gotham fw-bold mb-4">
+									<span>Our hist</span>ory
 								</h5>
-								<div className="second ms-4">
-									<p className="color2 crice f16 lh27 fw600">
+								<div className="second text-white">
+									<p className="crice f16 lh27 fw600">
 										Our founders have specialised for 10 years as experts in the
 										fintech space as providers of electronic payment services,
 										bank processing systems, mobile devices and payment
 										terminals. Developing innovative, market-leading products
 										that meet all international security standards.
 									</p>
-									<p className="color2 crice f16 lh27 fw600 mt-3">
+									<p className="crice f16 lh27 fw600 mt-3">
 										In 2019, having noticed a dynamic shift in consumer
 										behaviour, and the rise in digital payments, they decided to
 										develop a payment gateway and accompanying digital
@@ -32,12 +32,12 @@ const AboutDetail = () => {
 									</p>
 								</div>
 							</div>
-							<div className="d-flex mt-5">
-								<h5 className="color1 f18 gotham fw-bold">
-									<span className="bottomLineGray">Our miss</span>ion
+							<div className="d-flex flex-column mt-5">
+								<h5 className="text-white f22 gotham fw-bold mb-4">
+									<span>Our miss</span>ion
 								</h5>
-								<div className="second ms-4">
-									<p className="color2 crice f16 lh27 fw600">
+								<div className="second text-white">
+									<p className="crice f16 lh27 fw600">
 										At Paymob we want to enable any business, both large and
 										small to provide their own Tap to Phone financial services,
 										transforming ordinary smartphones into a direct card reading
@@ -45,7 +45,7 @@ const AboutDetail = () => {
 										existing app, or working with us to build a bespoke SoftPOS
 										application for merchant customers.
 									</p>
-									<p className="color2 crice f16 lh27 fw600 mt-3">
+									<p className="crice f16 lh27 fw600 mt-3">
 										– We are ushering in the next generation of payments.
 									</p>
 								</div>

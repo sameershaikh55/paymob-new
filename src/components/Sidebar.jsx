@@ -4,9 +4,8 @@ import AccordionSummary from "@material-ui/core/AccordionSummary";
 import AccordionDetails from "@material-ui/core/AccordionDetails";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import { IoIosArrowForward } from "react-icons/io";
 import { NavLink } from "react-router-dom";
-import { Link as LinkS } from "react-scroll";
+// import { Link as LinkS } from "react-scroll";
 
 const Sidebar = ({ isOpen, ClickEvent }) => {
 	return (
@@ -20,7 +19,7 @@ const Sidebar = ({ isOpen, ClickEvent }) => {
 		>
 			<div className="innerSidebar container-fluid">
 				<div className="row">
-					<div className="col-12 mx-auto">
+					<div className="col-12">
 						<Accordion>
 							<AccordionSummary
 								expandIcon={<ExpandMoreIcon />}
@@ -36,118 +35,120 @@ const Sidebar = ({ isOpen, ClickEvent }) => {
 							<AccordionDetails>
 								<Typography>
 									<div className="row">
-										<div className="col-6">
+										<div className="col-12">
 											<NavLink exact to="/productOverview">
-												<button className="color1 f20 border-0 gotham shadow-none bg-transparent f14">
-													Overview <IoIosArrowForward />
+												<button className="text-start color1 f20 border-0 gotham shadow-none bg-transparent f14 fw600">
+													Overview
 												</button>
 											</NavLink>
 										</div>
-										<div className="col-6">
+										<div className="col-12">
 											<NavLink exact to="/contact">
-												<button className="color1 f20 border-0 gotham shadow-none bg-transparent f14">
-													Contact <IoIosArrowForward />
+												<button className="text-start color1 f20 border-0 gotham shadow-none bg-transparent f14 fw600">
+													Contact
 												</button>
 											</NavLink>
 										</div>
 									</div>
 
-									<div className="row mt-5">
-										<div className="col-6">
-											<h6 className="bottomHead mb-3 f14 gotham fw-bold">
+									<div className="row mt-4">
+										<div className="col-12">
+											<h6 className="color4 mb-3 f14 gotham fw-bold">
 												PAYMENT TOOLS
 											</h6>
 										</div>
-										<div className="col-6">
-											<h6 className="bottomHead mb-3 f14 gotham fw-bold">
-												SYSTEM COMPONENETS
-											</h6>
-										</div>
 
-										<div className="col-6 mt-2">
+										<div className="col-12 mt-2">
 											<ul className="list-unstyled mb-0">
 												<li className="f14 mb-3">
 													<NavLink
 														to="/androidSdk"
-														className="color1 text-decoration-none gotham"
+														className="color1 text-decoration-none gotham fw600"
 													>
-														Android mobile SDK <IoIosArrowForward />
+														Android mobile SDK
 													</NavLink>
 												</li>
 												<li className="f14 mb-3">
 													<NavLink
 														to="/softPos"
-														className="color1 text-decoration-none gotham"
+														className="color1 text-decoration-none gotham fw600"
 													>
-														SoftPOS app <IoIosArrowForward />
+														SoftPOS app
 													</NavLink>
 												</li>
-												<li className="f14 mb-3">
+												{/* <li className="f14 mb-3">
 													<NavLink
 														to="/mposCard"
-														className="color1 text-decoration-none gotham"
+														className="color1 text-decoration-none gotham fw600"
 													>
-														mPOS card reader <IoIosArrowForward />
+														mPOS card reader
 													</NavLink>
 												</li>
 												<li className="f14 mb-3">
 													<NavLink
 														to="/miniPos"
-														className="color1 text-decoration-none gotham"
+														className="color1 text-decoration-none gotham fw600"
 													>
-														Mini POS terminal <IoIosArrowForward />
+														Mini POS terminal
 													</NavLink>
 												</li>
 												<li className="f14 mb-3">
 													<NavLink
 														to="/smartPos"
-														className="color1 text-decoration-none gotham"
+														className="color1 text-decoration-none gotham fw600"
 													>
-														Smart POS terminal <IoIosArrowForward />
+														Smart POS terminal
 													</NavLink>
-												</li>
+												</li> */}
 											</ul>
 										</div>
-										<div className="col-6 mt-2">
+
+										<div className="col-12 mt-4">
+											<h6 className="color4 mb-3 f14 gotham fw-bold">
+												SYSTEM COMPONENETS
+											</h6>
+										</div>
+
+										<div className="col-12 mt-2">
 											<ul className="list-unstyled mb-0">
 												<li className="f14 mb-3">
 													<NavLink
 														to="/merchantOnboarding"
-														className="color1 text-decoration-none gotham"
+														className="color1 text-decoration-none gotham fw600"
 													>
-														Merchent onboarding <IoIosArrowForward />
+														Digital merchent onboarding
 													</NavLink>
 												</li>
 												<li className="f14 mb-3 color1">
 													<NavLink
 														to="/adminPortal"
-														className="color1 text-decoration-none gotham"
+														className="color1 text-decoration-none gotham fw600"
 													>
-														Admin portal <IoIosArrowForward />
+														Admin portal
 													</NavLink>
 												</li>
 												<li className="f14 mb-3 color1">
 													<NavLink
 														to="/merchantDashboard"
-														className="color1 text-decoration-none gotham"
+														className="color1 text-decoration-none gotham fw600"
 													>
-														Merchant & client dashboard <IoIosArrowForward />
+														Merchant dashboard
 													</NavLink>
 												</li>
 												<li className="f14 mb-3 color1">
 													<NavLink
 														to="/paymentGatway"
-														className="color1 text-decoration-none gotham"
+														className="color1 text-decoration-none gotham fw600"
 													>
-														Payment gateway <IoIosArrowForward />
+														Payment gateway
 													</NavLink>
 												</li>
 												<li className="f14 mb-3 color1">
 													<NavLink
 														to="/certifications"
-														className="color1 text-decoration-none gotham"
+														className="color1 text-decoration-none gotham fw600"
 													>
-														Certifications <IoIosArrowForward />
+														Certifications
 													</NavLink>
 												</li>
 											</ul>
@@ -171,104 +172,96 @@ const Sidebar = ({ isOpen, ClickEvent }) => {
 							<AccordionDetails>
 								<Typography>
 									<div className="row">
-										<div className="col-6">
-											<h6 className="bottomHead mb-3 f14 gotham fw-bold">
+										{/* <div className="col-12">
+											<h6 className="color4 mb-3 f14 gotham fw-bold">
 												INDUSTRY SECTORS
 											</h6>
-										</div>
-										<div className="col-6">
-											<h6 className="bottomHead mb-3 f14 gotham fw-bold">
-												FRIENDS OF PAYMOB
-											</h6>
-										</div>
-										<div className="col-6">
+										</div> */}
+										<div className="col-12">
 											<ul className="list-unstyled mb-0">
 												<li className="f14 mb-3">
 													<NavLink
 														to="/industrySector"
-														className="color1 text-decoration-none gotham"
+														className="color1 text-decoration-none gotham fw600"
 													>
-														Retailers & small <br /> business{" "}
-														<IoIosArrowForward />
+														Industry sectors
 													</NavLink>
 												</li>
 												<li className="f14 mb-3">
 													<NavLink
-														to="/industrySector"
-														className="color1 text-decoration-none gotham"
+														to="/partners"
+														className="color1 text-decoration-none gotham fw600"
 													>
-														Gig economy <IoIosArrowForward />
+														Friends of Dapio
 													</NavLink>
 												</li>
 												<li className="f14 mb-3">
 													<NavLink
-														to="/industrySector"
-														className="color1 text-decoration-none gotham"
+														to="/caseStudies"
+														className="color1 text-decoration-none gotham fw600"
 													>
-														Transportation <IoIosArrowForward />
-													</NavLink>
-												</li>
-												<li className="f14 mb-3">
-													<NavLink
-														to="/industrySector"
-														className="color1 text-decoration-none gotham"
-													>
-														Hospitality <IoIosArrowForward />
+														Case studies
 													</NavLink>
 												</li>
 											</ul>
 										</div>
-										<div className="col-6">
+
+										{/* <div className="col-12 mt-4">
+											<h6 className="color4 mb-3 f14 gotham fw-bold">
+												FRIENDS OF PAYMOB
+											</h6>
+										</div>
+										<div className="col-12">
 											<ul className="list-unstyled mb-0">
 												<li className="f14 mb-3">
 													<NavLink
 														to="/partners"
-														className="color1 text-decoration-none gotham"
+														className="color1 text-decoration-none gotham fw600"
 													>
-														Channel partners <IoIosArrowForward />
+														Channel partners
 													</NavLink>
 												</li>
 												<li className="f14 mb-3">
 													<NavLink
 														to="/partners"
-														className="color1 text-decoration-none gotham"
+														className="color1 text-decoration-none gotham fw600"
 													>
-														Banking <IoIosArrowForward />
+														Banking
 													</NavLink>
 												</li>
 												<li className="f14 mb-3">
 													<NavLink
 														to="/partners"
-														className="color1 text-decoration-none gotham"
+														className="color1 text-decoration-none gotham fw600"
 													>
-														Commerce vendors <IoIosArrowForward />
+														Commerce vendors
 													</NavLink>
 												</li>
 											</ul>
 										</div>
 										<div className="col-6 mt-2">
-											<h6 className="bottomHead mb-3 f14 gotham fw-bold">
+											<h6 className="color4 mb-3 f14 gotham fw-bold">
 												CASE STUDIES
 											</h6>
 											<ul className="list-unstyled mb-0">
 												<li className="f14 mb-3">
 													<NavLink
 														to="/caseStudies"
-														className="color1 text-decoration-none gotham"
+														className="color1 text-decoration-none gotham fw600"
 													>
-														ZmBIZI <IoIosArrowForward />
+														ZmBIZI
 													</NavLink>
 												</li>
 												<li className="f14 mb-3">
 													<NavLink
 														to="/caseStudies"
-														className="color1 text-decoration-none gotham"
+														className="color1 text-decoration-none gotham fw600"
 													>
-														Aisino <IoIosArrowForward />
+														Aisino
 													</NavLink>
 												</li>
 											</ul>
-										</div>
+										</div> */}
 									</div>
 								</Typography>
 							</AccordionDetails>
@@ -293,34 +286,34 @@ const Sidebar = ({ isOpen, ClickEvent }) => {
 												<li className="f14 mb-3">
 													<NavLink
 														to="/developers"
-														className="color1 text-decoration-none gotham"
+														className="color1 text-decoration-none gotham fw600"
 													>
-														Developer tools <IoIosArrowForward />
+														Developer tools
 													</NavLink>
 												</li>
 												<li className="f14 mb-3">
 													<NavLink
 														to="/callback"
-														className="color1 text-decoration-none gotham"
+														className="color1 text-decoration-none gotham fw600"
 													>
-														App to app API <IoIosArrowForward />
+														App to app API
 													</NavLink>
 												</li>
 												<li className="f14 mb-3">
 													<NavLink
 														to="/inHouseDeployement"
-														className="color1 text-decoration-none gotham"
+														className="color1 text-decoration-none gotham fw600"
 													>
-														In-house deployment <IoIosArrowForward />
+														In-house deployment
 													</NavLink>
 												</li>
 												<li className="f14 mb-3">
 													<a
-														className="color1 text-decoration-none gotham"
+														className="color1 text-decoration-none gotham fw600"
 														target="blank"
 														href="https://airtable.com/shrL21Fd1xLND39mK"
 													>
-														Create a demo account <IoIosArrowForward />
+														Create a demo account
 													</a>
 												</li>
 											</ul>
@@ -349,9 +342,9 @@ const Sidebar = ({ isOpen, ClickEvent }) => {
 												<li className="f14 mb-3">
 													<NavLink
 														to="/pricing"
-														className="color1 text-decoration-none gotham"
+														className="color1 text-decoration-none gotham fw600"
 													>
-														Basic fee setup <IoIosArrowForward />
+														Basic fee setup
 													</NavLink>
 												</li>
 											</ul>
@@ -375,78 +368,74 @@ const Sidebar = ({ isOpen, ClickEvent }) => {
 							<AccordionDetails>
 								<Typography>
 									<div className="row">
-										<div className="col-6">
+										<div className="col-12">
 											<ul className="list-unstyled mb-0">
 												<li className="f14 mb-3">
 													<NavLink
 														to="/about"
-														className="color1 text-decoration-none gotham"
+														className="color1 text-decoration-none gotham fw600"
 													>
-														About us <IoIosArrowForward />
+														About us
 													</NavLink>
 												</li>
 												<li className="f14 mb-3">
-													<LinkS
-														to="insight"
-														offset={-120}
-														smooth={true}
-														duration={600}
-														spy={true}
+													<NavLink
+														to="/blogList"
 														className="color1 text-decoration-none gotham pointer"
 													>
-														Paymob INsights <IoIosArrowForward />
-													</LinkS>
+														Dapio INsights
+													</NavLink>
 												</li>
 												<li className="f14 mb-3">
 													<NavLink
 														to="/faq"
-														className="color1 text-decoration-none gotham"
+														className="color1 text-decoration-none gotham fw600"
 													>
-														FAQs <IoIosArrowForward />
+														FAQs
 													</NavLink>
 												</li>
 												<li className="f14 mb-3">
 													<NavLink
 														to="/press"
-														className="color1 text-decoration-none gotham"
+														className="color1 text-decoration-none gotham fw600"
 													>
-														Press <IoIosArrowForward />
+														Press
 													</NavLink>
 												</li>
 											</ul>
 										</div>
-										<div className="col-6">
+										<div className="col-12">
 											<ul className="list-unstyled mb-0">
 												<li className="f14 mb-3">
 													<NavLink
 														to="/team"
-														className="color1 text-decoration-none gotham"
+														className="color1 text-decoration-none gotham fw600"
 													>
-														Our team <IoIosArrowForward />
+														Our team
 													</NavLink>
 												</li>
 												<li className="f14 mb-3">
 													<NavLink
 														to="/careers"
-														className="color1 text-decoration-none gotham"
+														className="color1 text-decoration-none gotham fw600"
 													>
-														Careers <IoIosArrowForward />
+														Careers
 													</NavLink>
 												</li>
 												<li className="f14 mb-3">
 													<NavLink
 														to="/certifications"
-														className="color1 text-decoration-none gotham"
+														className="color1 text-decoration-none gotham fw600"
 													>
-														Certifications and security <IoIosArrowForward />
+														Certifications and security
 													</NavLink>
 												</li>
 												<li className="f14 mb-3">
 													<NavLink
 														to="/contact"
-														className="color1 text-decoration-none gotham"
+														className="color1 text-decoration-none gotham fw600"
 													>
-														Contact us <IoIosArrowForward />
+														Contact us
 													</NavLink>
 												</li>
 											</ul>
@@ -458,6 +447,10 @@ const Sidebar = ({ isOpen, ClickEvent }) => {
 					</div>
 				</div>
 			</div>
+
+			<NavLink to="/contact">
+				<button className="resquest_btn gotham fw-bold">Request Demo</button>
+			</NavLink>
 		</div>
 	);
 };

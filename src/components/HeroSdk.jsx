@@ -1,18 +1,19 @@
 import React from "react";
+import hero from "../assets/sdkHero.svg";
 
 // IMPORT
-import hero from "../assets/gifs/Android SDK GIF.gif";
+// import hero from "../assets/gifs/Android SDK GIF.gif";
 
 const HeroSdk = () => {
 	return (
 		<div>
-			<div className="hero_container">
+			<div className="hero_container sdk_hero">
 				<div className="page_container">
 					<div className="container-fluid">
 						<div className="row">
 							<div className="col-11 col-lg-12 mx-auto">
 								<div className="row align-items-center">
-									<div className="col-12 col-md-6">
+									<div className="col-12 col-md-6 col-lg-5">
 										<h1 className="fw-bolder">Android SDK</h1>
 										<p className="orangeC gotham f18 mb-0 fw-bold">
 											Ready to go software development kit
@@ -30,15 +31,15 @@ const HeroSdk = () => {
 									</div>
 									<div className="col-12 col-md-6 mt-1 mt-md-0 mb-4 mb-md-0">
 										<div className="row">
-											<div className="col-11 col-sm-8 col-md-10 mx-auto text-center">
-												<img className="w-100" src={hero} alt="" />
-											</div>
+											<div className="col-11 col-sm-8 col-md-10 mx-auto text-center"></div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
+
+					<img className="d-block d-md-none hero_img" src={hero} alt="" />
 				</div>
 			</div>
 		</div>

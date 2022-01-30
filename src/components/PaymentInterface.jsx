@@ -2,10 +2,7 @@ import React from "react";
 
 // IMPORTS
 import p1 from "../assets/products/p1.svg";
-import p2 from "../assets/products/p2.svg";
-import i1 from "../assets/productInterface/i1.png";
-import i2 from "../assets/productInterface/i2.svg";
-import i3 from "../assets/productInterface/i3.jpeg";
+import p2 from "../assets/products/p2.png";
 import { IoIosArrowForward } from "react-icons/io";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
@@ -43,9 +40,6 @@ const PaymentInterface = () => {
 	const data = [
 		{ i: p1, t: "Mobile SDK", l: "/androidSdk" },
 		{ i: p2, t: "SoftPOS app", l: "/softPos" },
-		{ i: i1, t: "mPOS card reader", l: "/mposCard" },
-		{ i: i2, t: "Mini POS Terminal", l: "/miniPos" },
-		{ i: i3, t: "Smart POS Terminal", l: "/smartPos" },
 	];
 
 	return (
@@ -86,7 +80,7 @@ const PaymentInterface = () => {
 													src={prev.i}
 													alt=""
 												/>
-												<h5 className="color1 f20 gotham fw600 mt-2">
+												<h5 className="color1 f20 gotham fw600 mt-3">
 													{prev.t}
 												</h5>
 												<Link to={prev.l}>
@@ -101,16 +95,16 @@ const PaymentInterface = () => {
 							</div>
 
 							<div className="d-none d-xl-block">
-								<div className="d-flex justify-content-between align-items-end mb-5">
+								<div className="row align-items-end mb-5">
 									{data.map((prev, i) => {
 										return (
-											<div className="text-center mt-5 system_card">
+											<div className="col-6 text-center mt-5 system_card">
 												<img
-													style={{ width: i === 4 && "66%" }}
+													className={`${(i === 0 && "w-75") || "w-100"}`}
 													src={prev.i}
 													alt=""
 												/>
-												<h5 className="color1 f20 gotham fw600 mt-2">
+												<h5 className="color1 f20 gotham fw600 mt-5">
 													{prev.t}
 												</h5>
 												<Link to={prev.l}>

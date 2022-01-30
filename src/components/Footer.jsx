@@ -7,6 +7,11 @@ import { Link as LinkS } from "react-scroll";
 import { Link, NavLink } from "react-router-dom";
 import Newsletter from "./Newsletter";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
+import Accordion from "@material-ui/core/Accordion";
+import AccordionSummary from "@material-ui/core/AccordionSummary";
+import AccordionDetails from "@material-ui/core/AccordionDetails";
+import Typography from "@material-ui/core/Typography";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 // API URL TO POST
 const url =
@@ -17,18 +22,17 @@ const Footer = () => {
 		{ t: "Product overview", l: "/productOverview" },
 		{ t: "Android mobile SDK", l: "/androidSdk" },
 		{ t: "SoftPOS mobile App", l: "/softPos" },
-		{ t: "mPOS card reader", l: "/mposCard" },
-		{ t: "Mini POS Terminal", l: "/miniPos" },
-		{ t: "Smart POS Terminal", l: "/smartPos" },
-		{ t: "Digital merchant onboarding", l: "/merchantOnboarding" },
-		{ t: "Merchant dashboard", l: "/merchantDashboard" },
+		{ t: "Merchant onboarding", l: "/merchantOnboarding" },
+		{ t: "Dashboard", l: "/merchantDashboard" },
 		{ t: "Admin portal", l: "/adminPortal" },
 		{ t: "Payment gateway", l: "/paymentGatway" },
 	];
 
 	const cases = [
 		{ t: "Industry sectors", l: "/industrySector" },
-		{ t: "Friends of paymob", l: "/partners" },
+		{ t: "Channel Partner", l: "" },
+		{ t: "Commerce vendors", l: "" },
+		{ t: "Banking", l: "" },
 		{ t: "Case studies", l: "/caseStudies" },
 	];
 
@@ -42,7 +46,7 @@ const Footer = () => {
 
 	const about = [
 		{ t: "About us", l: "/about" },
-		{ t: "Paymob INsights", l: "/blogList" },
+		{ t: "Dapio INsights", l: "/blogList" },
 		{ t: "FAQs", l: "/faq" },
 		{ t: "Press", l: "/press" },
 		{ t: "Certifications & security", l: "/certifications" },
@@ -69,25 +73,177 @@ const Footer = () => {
 									<div className="w-100 mt-5 mt-sm-0">
 										<img src={logoW} alt="" />
 										<p className="text-dark fw-bold f12 mt-2">
-											<span className="bottomLineGrayLight pb-2">Paymob i</span>
-											s a proud{" "}
-											<img className="brandLogo ms-1" src={b3} alt="" /> backed
-											company
+											<span className="bottomLineGrayLight pb-2">Dapio i</span>s
+											a proud <img className="brandLogo ms-1" src={b3} alt="" />
+											backed company
 										</p>
 										<p className="secondText f8 color5">
-											"Paymob" is a trading name of PAYMOB TECHNOLOGY LTD, an
+											"Dapio" is a trading name of DAPIO TECHNOLOGY LTD, an
 											entity incorporated and registered under the law of
 											England and Wales at the following address: 71-75 Shelton
 											Street, Covent Garden, London, England, WC2H 9JQ, Company
-											registration number 11965837. "Paymob" is authorised by
-											the Financial Conduct Authority (FCA) in the UK under The
+											registration number 11965837. "dapio" is authorised by the
+											Financial Conduct Authority (FCA) in the UK under The
 											Payment Services Regulations 2017 for issuing and/or
 											acquiring of payment instruments (FRN: 917808).
 										</p>
 									</div>
 								</div>
 								<div className="col-12 col-lg-9 mt-lg-0 mt-5 mt-lg-0">
-									<div className="footer_inner_container">
+									<div className="footer_inner_container pt-3 d-block d-md-none">
+										<Accordion className="mt-0">
+											<AccordionSummary
+												expandIcon={<ExpandMoreIcon />}
+												aria-controls="panel1a-content"
+												id="panel1a-header"
+											>
+												<Typography>
+													<h5 className="text-white fw-bold gotham letterSpace mb-0">
+														Products
+													</h5>
+												</Typography>
+											</AccordionSummary>
+											<AccordionDetails>
+												<Typography>
+													<ul className="list-unstyled">
+														{products.map((item, i) => {
+															return (
+																<li key={i}>
+																	<NavLink exact to={item.l}>
+																		<button className="text-start text-white f18 border-0 gotham shadow-none bg-transparent f14 fw500">
+																			{item.t}
+																		</button>
+																	</NavLink>
+																</li>
+															);
+														})}
+													</ul>
+												</Typography>
+											</AccordionDetails>
+										</Accordion>
+										<Accordion className="mt-0">
+											<AccordionSummary
+												expandIcon={<ExpandMoreIcon />}
+												aria-controls="panel2a-content"
+												id="panel2a-header"
+											>
+												<Typography>
+													<h5 className="text-white fw-bold gotham letterSpace mb-0">
+														Use cases
+													</h5>
+												</Typography>
+											</AccordionSummary>
+											<AccordionDetails>
+												<Typography>
+													<ul className="list-unstyled">
+														{cases.map((item, i) => {
+															return (
+																<li key={i}>
+																	<NavLink exact to={item.l}>
+																		<button className="text-start text-white f18 border-0 gotham shadow-none bg-transparent f14 fw500">
+																			{item.t}
+																		</button>
+																	</NavLink>
+																</li>
+															);
+														})}
+													</ul>
+												</Typography>
+											</AccordionDetails>
+										</Accordion>
+										<Accordion className="mt-0">
+											<AccordionSummary
+												expandIcon={<ExpandMoreIcon />}
+												aria-controls="panel3a-content"
+												id="panel3a-header"
+											>
+												<Typography>
+													<h5 className="text-white fw-bold gotham letterSpace mb-0">
+														Developers
+													</h5>
+												</Typography>
+											</AccordionSummary>
+											<AccordionDetails>
+												<Typography>
+													<ul className="list-unstyled">
+														{dev.map((item, i) => {
+															return (
+																<li key={i}>
+																	<NavLink exact to={item.l}>
+																		<button className="text-start text-white f18 border-0 gotham shadow-none bg-transparent f14 fw500">
+																			{item.t}
+																		</button>
+																	</NavLink>
+																</li>
+															);
+														})}
+													</ul>
+												</Typography>
+											</AccordionDetails>
+										</Accordion>
+										<Accordion className="mt-0">
+											<AccordionSummary
+												expandIcon={<ExpandMoreIcon />}
+												aria-controls="panel4a-content"
+												id="panel4a-header"
+											>
+												<Typography>
+													<h5 className="text-white fw-bold gotham letterSpace mb-0">
+														Pricing
+													</h5>
+												</Typography>
+											</AccordionSummary>
+											<AccordionDetails>
+												<Typography>
+													<ul className="list-unstyled">
+														{price.map((item, i) => {
+															return (
+																<li key={i}>
+																	<NavLink exact to={item.l}>
+																		<button className="text-start text-white f18 border-0 gotham shadow-none bg-transparent f14 fw500">
+																			{item.t}
+																		</button>
+																	</NavLink>
+																</li>
+															);
+														})}
+													</ul>
+												</Typography>
+											</AccordionDetails>
+										</Accordion>
+										<Accordion className="mt-0">
+											<AccordionSummary
+												expandIcon={<ExpandMoreIcon />}
+												aria-controls="panel5a-content"
+												id="panel5a-header"
+											>
+												<Typography>
+													<h5 className="text-white fw-bold gotham letterSpace mb-0">
+														About us
+													</h5>
+												</Typography>
+											</AccordionSummary>
+											<AccordionDetails>
+												<Typography>
+													<ul className="list-unstyled">
+														{about.map((item, i) => {
+															return (
+																<li key={i}>
+																	<NavLink exact to={item.l}>
+																		<button className="text-start text-white f18 border-0 gotham shadow-none bg-transparent f14 fw500">
+																			{item.t}
+																		</button>
+																	</NavLink>
+																</li>
+															);
+														})}
+													</ul>
+												</Typography>
+											</AccordionDetails>
+										</Accordion>
+									</div>
+
+									<div className="footer_inner_container d-none d-md-flex">
 										<div className="single_cont">
 											<div>
 												<h6 className="fw600 borderTop pt-2">Products</h6>
@@ -369,26 +525,52 @@ const Footer = () => {
 									</div>
 								</div>
 
-								<div className="d-flex flex-column justify-content-start align-items-end mt-5 mt-md-0">
-									<h6 className="f15">
-										<span className="orangeC fw-bolder">Subscribe</span> to
-										Paymob INsights, our weekly newsletter!
-									</h6>
+								<div className="d-flex flex-column justify-content-start align-items-center align-items-md-end mt-5 mt-md-0 w-100">
+									<div className="mt-3 d-block d-md-none">
+										<a
+											className="text-white"
+											target="blank"
+											href="https://www.instagram.com/paymobtech/"
+										>
+											<FaInstagram className="h5" />
+										</a>
+										<a
+											className="text-white"
+											target="blank"
+											href="https://www.linkedin.com/company/paymobtech"
+										>
+											<FaLinkedinIn className="ms-3 h5" />
+										</a>
+										<a
+											className="text-white"
+											target="blank"
+											href="https://twitter.com/paymobtech"
+										>
+											<FaTwitter className="ms-3 h5" />
+										</a>
+									</div>
 
-									{/* MAIL CHIMP START */}
-									<MailchimpSubscribe
-										url={url}
-										render={({ subscribe, status, message }) => (
-											<div>
-												<Newsletter
-													onSubmitted={(formData) => subscribe(formData)}
-													status={status}
-													message={message}
-												/>
-											</div>
-										)}
-									/>
-									{/* MAIL CHIMP END */}
+									<div className="mt-3">
+										<h6 className="f15">
+											<span className="orangeC fw-bolder">Subscribe</span> to
+											Dapio INsights, our weekly newsletter!
+										</h6>
+
+										{/* MAIL CHIMP START */}
+										<MailchimpSubscribe
+											url={url}
+											render={({ subscribe, status, message }) => (
+												<div>
+													<Newsletter
+														onSubmitted={(formData) => subscribe(formData)}
+														status={status}
+														message={message}
+													/>
+												</div>
+											)}
+										/>
+										{/* MAIL CHIMP END */}
+									</div>
 								</div>
 							</div>
 						</div>

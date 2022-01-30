@@ -83,7 +83,7 @@ const Brands = () => {
 	];
 
 	return (
-		<div className="brand_container mt-5">
+		<div className="brand_container">
 			<div className="header_containerSize">
 				<div className="container-fluid">
 					<div className="row">
