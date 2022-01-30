@@ -1476,7 +1476,8 @@ input:focus {
 }
 
 .blog_list_container .inner_container {
-  background: #f1efec;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(-23.73%, rgba(17, 75, 124, 0.99)), to(#08243b));
+  background: linear-gradient(180deg, rgba(17, 75, 124, 0.99) -23.73%, #08243b 100%);
   -webkit-box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.09);
           box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.09);
   border-radius: 19px;
@@ -1485,10 +1486,10 @@ input:focus {
 
 .blog_list_container .thumbnail {
   max-width: 480px;
-  border-radius: 18px;
+  border-radius: 20px;
   min-height: 327px;
-  -webkit-box-shadow: 1px 1px 10px #ccc;
-          box-shadow: 1px 1px 10px #ccc;
+  -webkit-box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.09);
+          box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.09);
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
@@ -2306,6 +2307,13 @@ input:focus {
   }
   .press_hero_container {
     padding-top: 4rem;
+  }
+  .explore_availability_container {
+    background: url("../assets/globe2.png");
+    height: 900px;
+    width: 100%;
+    background-repeat: no-repeat;
+    padding-top: 20rem;
   }
 }
 

@@ -80,12 +80,12 @@ const ContactBody = () => {
 												</li>
 											</ul>
 
-											<iframe
+											{/* <iframe
 												className="mt-4"
 												src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Europe%2FLondon&showTitle=1&showNav=1&showDate=1&showPrint=1&showTabs=1&showCalendars=1&showTz=1&title=June's%20calendar&src=anVuZXJlc3prYUBwYXltb2IudWs&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4tZ2IudWsjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&src=anJlc3prYTk1QGdtYWlsLmNvbQ&color=%23039BE5&color=%2333B679&color=%230B8043&color=%239E69AF"
 												style={{ border: "solid 1px #777" }}
 												title="calender"
-											></iframe>
+											></iframe> */}
 										</div>
 									</div>
 								</div>

@@ -15,7 +15,7 @@ const BlogPagination = ({
 	}
 
 	return (
-		<div className="bespoke_solution_container">
+		<div className="py-5">
 			<div className="page_container">
 				<div className="container-fluid">
 					<div className="row">

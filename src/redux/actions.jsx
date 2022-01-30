@@ -1,7 +1,7 @@
 import { BLOGS } from "./type";
 import axios from "axios";
 
-const url = "https://v1.nocodeapi.com/paymob1234/ghost/PgUAPCdEXBfABFYr";
+const url = "https://v1.nocodeapi.com/paymob1234/ghost/CLxPyVlqTQfbKrAg";
 
 const blogFunc = (data) => {
 	return {

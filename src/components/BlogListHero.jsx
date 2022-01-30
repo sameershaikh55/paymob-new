@@ -26,7 +26,7 @@ const BlogListHero = ({ blogs }) => {
 												dangerouslySetInnerHTML={{
 													__html: blogs[0].title,
 												}}
-												className="f35 gotham fw600 color1"
+												className="f35 gotham fw600 text-white"
 											></h2>
 											<div className="mt-2 mt-md-5">
 												<Link to={`/blogInside/${blogs[0].slug}`}>
