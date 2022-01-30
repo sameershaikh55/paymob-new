@@ -41,11 +41,11 @@ const PaymentGatway = () => {
 						<div className="row">
 							<div className="col-11 mx-auto">
 								<div className="row gx-5">
-									<div className="ps-5">
+									<div className="ps-md-5">
 										<div className="col-12 col-sm-10 col-md-5 ms-auto">
-											<hr style={hr} />
+											<hr style={hr} className="d-none d-md-block" />
 										</div>
-										<h4 className="text-end f18 color1 gotham my-4 fw-bold">
+										<h4 className="text-md-end f20 color1 gotham my-4 fw-bold">
 											Business features
 										</h4>
 									</div>
@@ -56,7 +56,7 @@ const PaymentGatway = () => {
 												return (
 													<li
 														key={i}
-														className="col-12 col-sm-6 mb-2 color2 gotham f16 mb-5 d-flex"
+														className="col-12 col-sm-6 mb-2 color2 gotham f20 mb-5 d-flex"
 													>
 														<div>
 															<img className="me-2" src={check} alt="" />

@@ -23,11 +23,11 @@ const GatewayDetails = () => {
 					<div className="row">
 						<div className="col-11 mx-auto">
 							<div className="row gx-5">
-								<div className="ps-5">
+								<div className="ps-md-5">
 									<div className="col-12 col-sm-10 col-md-5">
-										<hr style={hr} />
+										<hr style={hr} className="d-none d-md-block" />
 									</div>
-									<h4 className="f18 color1 gotham my-4 fw-bold">
+									<h4 className="f20 color1 gotham my-4 fw-bold">
 										Main technical functions of the system
 									</h4>
 								</div>

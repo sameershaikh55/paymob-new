@@ -6,7 +6,7 @@ import hero from "../assets/hero.png";
 
 const Hero = () => {
 	return (
-		<div className="hero_container">
+		<div className="hero_container main_hero">
 			<div className="page_container">
 				<div className="container-fluid">
 					<div className="row">

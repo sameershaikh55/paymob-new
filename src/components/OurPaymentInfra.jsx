@@ -98,8 +98,8 @@ const OurPaymentInfra = ({ md, adminP, pg }) => {
 									<div className="row">
 										{data.map((prev, i) => {
 											return (
-												<div key={i} className="col-6 mt-4">
-													<div className="cards_inner ps-2">
+												<div key={i} className="col-12 col-sm-6 mt-4">
+													<div className="cards_inner ps-0 ps-sm-2">
 														<h5 className="gotham f20 text-white fw700 color7">
 															{prev.t}
 														</h5>

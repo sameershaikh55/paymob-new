@@ -61,7 +61,7 @@ const HowitWorks2 = ({ callback }) => {
 									</h1>
 								</div>
 
-								<div className="sliderContainer mt-5">
+								<div className="sliderContainer white_slider_arrow mt-5">
 									<Slider {...settings}>
 										{data.map((pre, i) => {
 											return (
